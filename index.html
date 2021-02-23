@@ -610,5 +610,17 @@ iOS 11.0 - 13.5
   <script type="text/javascript" async
   src="//l.getsitecontrol.com/94ml25o7.js">
 </script>
+  
+  <script>
+  window.onload = function() {
+    setTimeout(function() {
+      if ( typeof(window.google_jobrunner) === "undefined" ) {
+        console.log("ad blocker installed");
+      } else {
+        console.log("no ad blocking found.");
+      }
+    }, 10000);
+  };
+</script>
 </body>
 </html>
